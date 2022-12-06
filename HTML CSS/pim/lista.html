@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Lista - MCL</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="Caixa">
+                <h1><img src="Batman.png" alt="Peronagem 2"></h1>
+            
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lista.html">Lista</a></li>
+                        <li><a href="https://www.imdb.com/">IMDB</a></li>
+                        <li><a href="https://myanimelist.net/">MAL</a></li>
+                        <li><a href="https://www.rottentomatoes.com/">Rotten</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="Contato">
+                <form>
+                    <label for="Nome">Nome e sobrenome</label>
+                    <input type="text" id="Nome" class="ImputPadrão" placeholder="Seu nome" pattern="[Çç+a-zA-Z\s]+$" required>
+                    
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" class="ImputPadrão" placeholder="email@mail.com" required>
+                    
+                    <label for="Telefone">Telefone</label>
+                    <input type="tel" id="Telefone" class="ImputPadrão" placeholder="XX XXXXX-XXXX" pattern="[0-9]{2} [0-9]{4,5}-[0-9]{4}$" required>
+
+                    <label for="Mensagem">Mensagem</label>
+                    <textarea id="Mensagem" class="ImputPadrão" placeholder="Escreva sua mensagem aqui!" maxlength="1000" required></textarea>
+                    
+                    <fieldset>
+                        <legend>Preferencia de contato</legend>
+                        <label for="RadioEmail"> <input type="radio" name="contato" value="email" id="RadioEmail">Email</label>
+
+                        <label for="RadioTelefone"><input type="radio" name="contato" value="telefone" id="RadioTelefone">Telefone</label>
+
+                        <label for="RadioWhatsapp"><input type="radio" name="contato" value="whatsapp" id="RadioWhatsapp" checked>Whatsapp</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Horário do atendimento</legend>
+                        <select>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </fieldset>
+
+                    <label>Gostaria de receber nossas novidades por email?<input type="checkbox" class="Checkbox"></label>
+
+                    <input type="submit" value="Enviar" class="Enviar">
+
+                </form>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta e Sábado</td>
+                            <td>10h ~ 22h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        
+        <footer>
+            <img src="logo-branco.png"  alt="Logo Barbearia Alura">
+            <p class="Copyright">&copy; Copyright Barbearia Alura - 2019</p>
+        </footer>
+    </body>
+</html>

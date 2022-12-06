@@ -1,0 +1,41 @@
+.principal {
+    background: #CCCCCC; 
+    padding: 30px;
+}
+
+.TituloPrincipal {
+    color: #111111;
+    margin-left: 3%;
+}
+
+p {
+    text-align: center;
+}
+
+#missao {
+    font-size:20px
+}
+
+em strong {
+    color: #8C6A03;
+}
+
+.beneficios {
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.itens {
+    font-style: italic;
+}
+
+#beneficios {
+    width: 50%;
+}
